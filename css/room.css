@@ -1,0 +1,244 @@
+:root{
+    --orange: rgb(255, 166, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+/* header section start */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #111;
+    box-shadow: 0 2px 10px var(--orange);
+    position: sticky;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+header .menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li{
+    margin-left: 50px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 0 0 15px 0;
+}
+.menu ul li a:hover{
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+/* header section end */
+
+/* image-carousel section start  */
+.carousel-item{
+    width: 100%;
+    height: 90vh;
+}
+.carousel-item h5{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--orange);
+}
+.carousel-item p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+}
+/* image-carousel section end  */
+
+/* room-price section start  */
+.price-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+.price-list h3{
+    color: var(--orange);
+    padding: 20px 0;
+    font-weight: 600;
+}
+.price-list tr{
+    text-align: center;
+}
+/* room-price section end  */
+
+/* review-section start  */
+.review-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    width: 100%;
+}
+.review-container .review-title{
+    text-align: center;
+    color: #fff;
+    padding: 25px;
+}
+.review-container .review-title span{
+    color: var(--orange);
+}
+.comment-container{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.comment-container .comment-section{
+    width: 50%;
+}
+.comment-container .comment-section .comment{
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 15px#fff;
+    border-radius: 10px;
+}
+.comment-container .comment-section .comment label{
+    color: var(--orange);
+    font-size: 20px;
+    padding: 10px 0;
+}
+.comment-container .comment-section .comment .text-area{
+    height: 100px;
+}
+.comment-container .comment-section .comment button{
+    padding: 10px 20px;
+    border: 2px solid var(--orange);
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.comment-container .comment-section .comment button:hover{
+    color: #111;
+    background-color: rgb(17, 205, 252);
+}
+.comment-container .review-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comment-container .review-section .review{
+    width: 100%;
+    padding: 0 5px;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review .review-1{
+    width: 70%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+}
+.review .review-1 span{
+    font-family: Arial;
+    color: var(--orange);
+}
+.review .review-1 h1{
+    text-align:  center;
+    font-size: 20px;
+    background-color: #111;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 5px solid var(--orange);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.review .review-1 p ,h3{
+    text-align:  justify;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+/* contact section start  */
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    padding: 35px;
+}
+.email , .phone , .location{
+    color: #fff;
+}
+.partner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partner h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+}
+.partner h1 span{
+    color: var(--orange);
+}
+.partner .payment-partner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.partner .payment-partner a:hover{
+    color: var(--orange);
+}
+.payment{
+    margin-left: 20px;
+}
+.payment a{
+    text-decoration: none;
+    color: #fff ;
+}
+/* contact section end  */
+
+/* footer section start  */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #222;
+}
+.footer h1{
+    color: #fff;
+    font-size: 20px;
+}
+/* footer section end  */

@@ -1,0 +1,246 @@
+:root{
+    --orange: rgb(255, 166, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+/* header section start */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #111;
+    box-shadow: 0 2px 10px var(--orange);
+    position: sticky;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+header .menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li{
+    margin-left: 50px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 0 0 15px 0;
+}
+.menu ul li a:hover{
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+/* header section end */
+
+/* home section start*/
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+}
+.home .home-title{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+.home-title h1{
+    font-size: 40px;
+    line-height: 100px;
+    letter-spacing: 2px;
+}
+.home-title h1 span{
+    color: var(--orange);
+}
+.home-title p{
+    text-align: justify;
+    font-size: 20px;
+}
+.home-title .learn-more button{
+    margin-top: 10px;
+    padding: 15px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid var(--orange);
+    transition: 0.5s;
+}
+.home-title .learn-more button:hover{
+    background-color: var(--orange);
+    color: #111;
+    border: 1px solid #fff;
+}
+.carousel{
+    border-radius: 10px;
+    border: 1px solid var(--orange);
+}
+.carousel-inner{
+    border-radius: 10px;
+    width: 450px;
+    height: 300px;
+}
+.slider .carousel-item img{
+    width: 450px;
+    height: 300px;
+}
+/* home section end*/
+
+/* food section start */
+.burger{
+    color: #fff;
+    text-align: center;
+    background-color: #444;
+    margin: 0;
+    padding-top: 25px;
+    font-weight: 600;
+}
+.burger span{
+    color: var(--orange);
+}
+.food-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background-color: #444;
+}
+.food-section .card{
+    margin-bottom: 10px;
+}
+.drink-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background: url(../bg-pic/cocktail-bg.jpg);
+}
+.drink{
+    color: #fff;
+    text-align: center;
+    background: #111;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+.drink span{
+    color: var(--orange);
+}
+.btn:hover{
+    transition: 0.5s;
+    color: #111;
+    background-color: var(--orange);
+}
+/* food section end */
+
+/* contact section start  */
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    padding: 35px;
+}
+.email , .phone , .location{
+    color: #fff;
+}
+.partner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partner h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+}
+.partner h1 span{
+    color: var(--orange);
+}
+.partner .payment-partner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.partner .payment-partner a:hover{
+    color: var(--orange);
+}
+.payment{
+    margin-left: 20px;
+}
+.payment a{
+    text-decoration: none;
+    color: #fff ;
+}
+/* contact section end  */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #222;
+}
+.footer h1{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:700px){
+
+    header{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        width: 100%;
+    }
+    .menu ul{
+        display: none;
+    }
+    .home-title h1{
+        text-align: center;
+        letter-spacing: 0;
+        font-size: 28px;
+    }
+    .home-title p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .carousel-inner{
+        width: 450px;
+        height: 350px;
+    }
+}
